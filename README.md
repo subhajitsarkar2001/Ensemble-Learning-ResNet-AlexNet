@@ -33,11 +33,12 @@ The dataset contains **8 rice leaf classes**:
 
 
 Validation Images: 186
+
 Number of Classes: 8
 
 ## **Dataset Structure**
+Rice leaf disease Dataset
 
-Rice leaf disease Dataset/
 └── Validation data/
     ├── Bacterial Leaf Blight/
     ├── Brown Spot/
