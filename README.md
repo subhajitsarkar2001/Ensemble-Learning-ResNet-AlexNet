@@ -44,6 +44,7 @@ Rice leaf disease Dataset
 
 
 └── Validation data/
+    
     ├── Bacterial Leaf Blight/
     ├── Brown Spot/
     ├── Healthy Rice Leaf/
