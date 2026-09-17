@@ -39,12 +39,21 @@ Number of Classes: 8
 ## **Dataset Structure**
 Rice leaf disease Dataset
 
+
 └── Validation data/
+    
     ├── Bacterial Leaf Blight/
+    
     ├── Brown Spot/
+    
     ├── Healthy Rice Leaf/
+    
     ├── Leaf Blast/
+   
     ├── Leaf scald/
+    
     ├── Narrow Brown Leaf Spot/
+   
     ├── Rice Hispa/
+   
     └── Sheath Blight/
