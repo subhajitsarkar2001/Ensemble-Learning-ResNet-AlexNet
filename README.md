@@ -8,7 +8,7 @@ The objective of this phase is to improve the reliability of rice leaf classific
 
 - **AlexNet**
 - **ResNet-18**
-- Weighted ensemble learning used on both
+- Weighted ensemble learning applied  on both
 
 Instead of relying on a single model, the system extracts class probabilities from both networks and combines them using a **weighted probability ensemble**.
 
