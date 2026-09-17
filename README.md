@@ -40,6 +40,7 @@ Number of Classes: 8
 Rice leaf disease Dataset
 
 
+
 └── Validation data/
     
     ├── Bacterial Leaf Blight/
