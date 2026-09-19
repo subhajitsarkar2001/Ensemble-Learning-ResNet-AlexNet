@@ -102,8 +102,8 @@ A weighted probability fusion strategy is used.
 
 The final ensemble probability for each class is calculated as:
 
-     Ensemble Probability
-      =
+     Ensemble Probability=
+      
      (0.60 × ResNet-18 Probability)
      +
      (0.40 × AlexNet Probability)
