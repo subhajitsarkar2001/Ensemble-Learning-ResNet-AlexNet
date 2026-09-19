@@ -173,7 +173,7 @@ Weighted Ensemble	96.24%
 
 The results demonstrate that the ResNet-18 model provides the strongest individual validation performance in this experiment, while the weighted ensemble also achieves a high validation accuracy.
 
-**Ensemble Classification Report**
+## **Ensemble Classification Report**
 
                         precision    recall  f1-score   support
 
@@ -190,27 +190,27 @@ The results demonstrate that the ResNet-18 model provides the strongest individu
              macro avg       0.96      0.96      0.96       186
           weighted avg       0.96      0.96      0.96       186
 
-**Evaluation Metrics**
+## **Evaluation Metrics**
 
 The final ensemble is evaluated using several performance analysis techniques.
 
-**Accuracy**
+## **Accuracy**
 
 The overall validation accuracy of the weighted ensemble is:
 
                  96.24%
 
-**Precision, Recall and F1-score**
+## **Precision, Recall and F1-score**
 
 Class-wise precision, recall and F1-score are calculated using classification_report from scikit-learn.
 
-**Confusion Matrix**
+## **Confusion Matrix**
 
 A confusion matrix is generated to visualize the relationship between the actual rice leaf classes and the classes predicted by the ensemble.
 
 <img width="575" height="553" alt="confusion matrix (phase -2)" src="https://github.com/user-attachments/assets/a1b66b1f-8c98-4e98-adb8-ee1c1c7abe19" />
 
-**Multiclass ROC Analysis**
+## **Multiclass ROC Analysis**
 
 The project also generates one-vs-rest ROC curves for all eight rice leaf classes.
 
@@ -218,7 +218,7 @@ The Area Under the Curve (AUC) is calculated individually for each class to anal
 
 <img width="691" height="557" alt="ROC  curve" src="https://github.com/user-attachments/assets/81d88656-4ba9-4468-a423-f3e11aaadf98" />
 
-Technologies Used
+## Technologies Used
 
 | Technology   | Purpose                                        |
 | ------------ | ---------------------------------------------- |
@@ -232,7 +232,7 @@ Technologies Used
 | Matplotlib   | Visualization                                  |
 | Seaborn      | Confusion matrix visualization                 |
 
-**Model Files**
+## **Model Files**
 
 The ensemble pipeline uses the trained model files generated during the project:
 
@@ -244,7 +244,7 @@ and
 
 The AlexNet model is loaded using TensorFlow/Keras, while the ResNet-18 weights are loaded using PyTorch.
 
-**Requirements**
+## **Requirements**
 
 Install the required packages using:
 
@@ -252,7 +252,7 @@ Install the required packages using:
 
 For GPU execution, install a compatible CUDA-enabled environment for the respective deep learning frameworks.
 
-**How to Run**
+## **How to Run**
 
 1)Prepare the rice leaf validation dataset.
 
@@ -288,7 +288,7 @@ For GPU execution, install a compatible CUDA-enabled environment for the respect
 
 - generate multiclass ROC curves.
 
-  **Results Summary**
+## **Results Summary**
 
                          Validation Accuracy
 
@@ -306,7 +306,7 @@ For GPU execution, install a compatible CUDA-enabled environment for the respect
 
   weighted ensemble.
 
-  ## **Project Structure**
+## **Project Structure**
 
         Ensemble-Learning-ResNet-AlexNet/
         │
