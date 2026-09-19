@@ -110,7 +110,7 @@ The final ensemble probability for each class is calculated as:
 
 The class having the highest combined probability becomes the final ensemble prediction.
 
-##**Ensemble Workflow**
+## **Ensemble Workflow**
 
                  Validation Image
                         │
@@ -134,30 +134,30 @@ The class having the highest combined probability becomes the final ensemble pre
                         ▼
               Rice Leaf Disease Class
 
-##**Implementation**
+## **Implementation**
 
--The ensemble pipeline performs the following operations:
+The ensemble pipeline performs the following operations:
 
--Load the validation dataset.
+1)Load the validation dataset.
 
--Load the trained AlexNet model.
+2)Load the trained AlexNet model.
 
--Generate AlexNet class probabilities.
+3)Generate AlexNet class probabilities.
 
--Calculate AlexNet validation accuracy.
+4)Calculate AlexNet validation accuracy.
 
--Release TensorFlow model resources.
+5)Release TensorFlow model resources.
 
--Load the trained ResNet-18 model.
+6)Load the trained ResNet-18 model.
 
--Apply ResNet-18 preprocessing.
+7)Apply ResNet-18 preprocessing.
 
--Generate ResNet-18 class probabilities.
+8)Generate ResNet-18 class probabilities.
 
-Calculate ResNet-18 validation accuracy.
+9)Calculate ResNet-18 validation accuracy.
 
-Combine both probability distributions using weighted averaging.
+10)Combine both probability distributions using weighted averaging.
 
-Select the class with the highest combined probability.
+11)Select the class with the highest combined probability.
 
-Evaluate the final ensemble using multiple classification metrics.
+12)Evaluate the final ensemble using multiple classification metrics.
