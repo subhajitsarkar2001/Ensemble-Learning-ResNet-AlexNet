@@ -253,21 +253,22 @@ Install the required packages using:
 For GPU execution, install a compatible CUDA-enabled environment for the respective deep learning frameworks.
 
 **How to Run**
-Prepare the rice leaf validation dataset.
 
-Arrange the validation images according to the documented class structure.
+1)Prepare the rice leaf validation dataset.
 
-Place the trained AlexNet .keras model at the required location.
+2)Arrange the validation images according to the documented class structure.
 
-Place the trained ResNet-18 .pth model at the required location.
+3)Place the trained AlexNet .keras model at the required location.
 
-Open the Phase 2 notebook.
+4)Place the trained ResNet-18 .pth model at the required location.
 
-Update the dataset and model paths.
+5)Open the Phase 2 notebook.
 
-Run the notebook cells sequentially.
+6)Update the dataset and model paths.
 
-The notebook will:
+7)Run the notebook cells sequentially.
+
+8)The notebook will:
 
 - evaluate AlexNet,
 
@@ -286,6 +287,52 @@ The notebook will:
 - generate the confusion matrix, and
 
 - generate multiclass ROC curves.
+
+  **Results Summary**
+
+                         Validation Accuracy
+
+             AlexNet             69.35%
+                                   │
+                                   │
+            ResNet-18             97.31%
+                                   │
+                                   │
+          Weighted Ensemble       96.24%
+
+  The experiment shows that probability-level fusion can combine predictions from different architectures into a single
+
+  classification system. In this particular experiment, ResNet-18 achieved a higher standalone validation accuracy than the final
+
+  weighted ensemble.
+
+  ## **Project Structure**
+
+        Ensemble-Learning-ResNet-AlexNet/
+        │
+        ├── Phase 2 Notebook
+        │   └── Ensemble Learning Notebook
+        │
+        ├── rice_leaf_alexnet_model.keras
+        │
+        ├── rice_disease_model (2).pth
+        │
+        └── README.md
+
+Large datasets and model files may be kept outside the repository when repository size limits make direct inclusion impractical.
+
+## **Author**
+
+**Subhajit Sarkar**
+
+## **Final Note**
+
+This repository represents the ensemble-learning phase of the rice leaf disease detection project. It focuses on combining 
+
+predictions from two different CNN architectures and evaluating the resulting classifier through accuracy, class-wise metrics, 
+
+confusion matrix analysis and multiclass ROC analysis.
+  
 
 
 
