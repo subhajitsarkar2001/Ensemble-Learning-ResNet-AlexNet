@@ -210,6 +210,13 @@ A confusion matrix is generated to visualize the relationship between the actual
 
 <img width="575" height="553" alt="confusion matrix (phase -2)" src="https://github.com/user-attachments/assets/a1b66b1f-8c98-4e98-adb8-ee1c1c7abe19" />
 
+**Multiclass ROC Analysis**
+
+The project also generates one-vs-rest ROC curves for all eight rice leaf classes.
+
+The Area Under the Curve (AUC) is calculated individually for each class to analyze the discriminative performance of the ensemble probabilities.
+
+<img width="691" height="557" alt="ROC  curve" src="https://github.com/user-attachments/assets/81d88656-4ba9-4468-a423-f3e11aaadf98" />
 
 
 
