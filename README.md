@@ -55,3 +55,11 @@ Rice leaf disease Dataset
     └── Sheath Blight/
 
 The class ordering is kept consistent while generating predictions from both models so that their probability vectors correspond to the same disease classes.
+
+## **Models Used**
+
+The ensemble consists of two independently trained deep learning models.
+
+**1. AlexNet**
+
+The AlexNet model developed during Phase 1 is loaded from:
