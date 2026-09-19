@@ -232,6 +232,61 @@ Technologies Used
 | Matplotlib   | Visualization                                  |
 | Seaborn      | Confusion matrix visualization                 |
 
+**Model Files**
+
+The ensemble pipeline uses the trained model files generated during the project:
+
+       rice_leaf_alexnet_model.keras
+
+and
+
+        rice_disease_model (2).pth
+
+The AlexNet model is loaded using TensorFlow/Keras, while the ResNet-18 weights are loaded using PyTorch.
+
+**Requirements**
+
+Install the required packages using:
+
+     pip install tensorflow torch torchvision numpy matplotlib seaborn scikit-learn
+
+For GPU execution, install a compatible CUDA-enabled environment for the respective deep learning frameworks.
+
+**How to Run**
+Prepare the rice leaf validation dataset.
+
+Arrange the validation images according to the documented class structure.
+
+Place the trained AlexNet .keras model at the required location.
+
+Place the trained ResNet-18 .pth model at the required location.
+
+Open the Phase 2 notebook.
+
+Update the dataset and model paths.
+
+Run the notebook cells sequentially.
+
+The notebook will:
+
+- evaluate AlexNet,
+
+- evaluate ResNet-18,
+
+- extract their probability distributions,
+
+- perform weighted probability fusion,
+
+- generate the final ensemble predictions,
+
+- calculate accuracy,
+
+- produce the classification report,
+
+- generate the confusion matrix, and
+
+- generate multiclass ROC curves.
+
 
 
 
