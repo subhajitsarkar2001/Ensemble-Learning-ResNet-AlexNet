@@ -218,5 +218,20 @@ The Area Under the Curve (AUC) is calculated individually for each class to anal
 
 <img width="691" height="557" alt="ROC  curve" src="https://github.com/user-attachments/assets/81d88656-4ba9-4468-a423-f3e11aaadf98" />
 
+Technologies Used
+
+| Technology   | Purpose                                        |
+| ------------ | ---------------------------------------------- |
+| Python       | Main programming language                      |
+| TensorFlow   | AlexNet model inference                        |
+| Keras        | AlexNet model loading                          |
+| PyTorch      | ResNet-18 inference                            |
+| Torchvision  | ResNet-18 architecture and image preprocessing |
+| NumPy        | Numerical and probability operations           |
+| Scikit-learn | Accuracy and classification metrics            |
+| Matplotlib   | Visualization                                  |
+| Seaborn      | Confusion matrix visualization                 |
+
+
 
 
