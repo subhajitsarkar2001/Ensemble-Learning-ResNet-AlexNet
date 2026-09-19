@@ -63,3 +63,101 @@ The ensemble consists of two independently trained deep learning models.
 **1. AlexNet**
 
 The AlexNet model developed during Phase 1 is loaded from:
+
+      rice_leaf_alexnet_model.keras
+
+AlexNet processes the validation images at:
+
+      227 × 227
+
+The model generates a probability distribution over the eight disease classes.
+
+**2. ResNet-18**
+
+A trained ResNet-18 model is loaded using PyTorch.
+
+The validation images are resized to:
+
+     224 × 224
+
+and normalized using the standard ImageNet mean and standard deviation:
+
+     Mean = [0.485, 0.456, 0.406]
+
+     Std = [0.229, 0.224, 0.225]
+
+The ResNet-18 model produces class probabilities through the Softmax function.
+
+## **Ensemble Method**
+
+The two models do not contribute equally to the final prediction.
+
+A weighted probability fusion strategy is used.
+
+**Assigned Weights**
+
+     ResNet-18  → 60%
+
+     AlexNet    → 40%
+
+The final ensemble probability for each class is calculated as:
+
+     Ensemble Probability
+      =
+     (0.60 × ResNet-18 Probability)
+     +
+     (0.40 × AlexNet Probability)
+
+The class having the highest combined probability becomes the final ensemble prediction.
+
+##**Ensemble Workflow**
+
+                 Validation Image
+                        │
+              ┌─────────┴─────────┐
+              │                   │
+              ▼                   ▼
+           AlexNet             ResNet-18
+              │                   │
+              ▼                   ▼
+       Class Probabilities   Class Probabilities
+              │                   │
+              │                   │
+              └─────────┬─────────┘
+                        ▼
+              Weighted Probability
+                     Fusion
+                        │
+                        ▼
+                Final Prediction
+                        │
+                        ▼
+              Rice Leaf Disease Class
+
+##**Implementation**
+
+-The ensemble pipeline performs the following operations:
+
+-Load the validation dataset.
+
+-Load the trained AlexNet model.
+
+-Generate AlexNet class probabilities.
+
+-Calculate AlexNet validation accuracy.
+
+-Release TensorFlow model resources.
+
+-Load the trained ResNet-18 model.
+
+-Apply ResNet-18 preprocessing.
+
+-Generate ResNet-18 class probabilities.
+
+Calculate ResNet-18 validation accuracy.
+
+Combine both probability distributions using weighted averaging.
+
+Select the class with the highest combined probability.
+
+Evaluate the final ensemble using multiple classification metrics.
