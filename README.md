@@ -161,3 +161,52 @@ The ensemble pipeline performs the following operations:
 11)Select the class with the highest combined probability.
 
 12)Evaluate the final ensemble using multiple classification metrics.
+
+**Model Accuracy Comparison**
+
+The validation results obtained from the three prediction approaches are:
+
+Model	          Validation Accuracy
+AlexNet	            69.35%
+ResNet-18	        97.31%
+Weighted Ensemble	96.24%
+
+The results demonstrate that the ResNet-18 model provides the strongest individual validation performance in this experiment, while the weighted ensemble also achieves a high validation accuracy.
+
+**Ensemble Classification Report**
+
+                        precision    recall  f1-score   support
+
+     Bacterial Leaf Blight   0.95      0.90      0.92       20
+            Brown Spot       1.00      0.96      0.98        27
+     Healthy Rice Leaf       0.90      0.95      0.92        19
+            Leaf Blast       0.97      1.00      0.98        31
+            Leaf scald       1.00      1.00      1.00        23
+     Narrow Brown Leaf Spot  1.00      1.00      1.00        16
+            Rice Hispa       0.95      0.91      0.93        22
+         Sheath Blight       0.93      0.96      0.95        28
+
+              accuracy                           0.96       186
+             macro avg       0.96      0.96      0.96       186
+          weighted avg       0.96      0.96      0.96       186
+
+**Evaluation Metrics**
+
+The final ensemble is evaluated using several performance analysis techniques.
+
+**Accuracy**
+
+The overall validation accuracy of the weighted ensemble is:
+
+                 96.24%
+
+**Precision, Recall and F1-score**
+
+Class-wise precision, recall and F1-score are calculated using classification_report from scikit-learn.
+
+**Confusion Matrix**
+
+A confusion matrix is generated to visualize the relationship between the actual rice leaf classes and the classes predicted by the ensemble.
+
+
+
