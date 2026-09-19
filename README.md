@@ -104,9 +104,8 @@ The final ensemble probability for each class is calculated as:
 
      Ensemble Probability=
       
-     (0.60 × ResNet-18 Probability)
-     +
-     (0.40 × AlexNet Probability)
+     (0.60 × ResNet-18 Probability) + (0.40 × AlexNet Probability)
+     
 
 The class having the highest combined probability becomes the final ensemble prediction.
 
