@@ -208,5 +208,8 @@ Class-wise precision, recall and F1-score are calculated using classification_re
 
 A confusion matrix is generated to visualize the relationship between the actual rice leaf classes and the classes predicted by the ensemble.
 
+<img width="645" height="554" alt="confusion matrix (phase 2)" src="https://github.com/user-attachments/assets/de6ca412-cbdc-4de6-999b-b26f598fadcc" />
+
+
 
 
