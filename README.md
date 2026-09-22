@@ -168,11 +168,11 @@ The validation results obtained from the three prediction approaches are:
 	          
 |Model| Validation Accuracy|
 |------|--------------------:|
-|AlexNet|**69.35%|
+|AlexNet|**69.35%**|
 
-|ResNet-18|97.31%|
+|ResNet-18|**97.31%**|
 
-|Weighted Ensemble|96.24%|
+|Weighted Ensemble|**96.24%**|
 
 The results demonstrate that the ResNet-18 model provides the strongest individual validation performance in this experiment, while the weighted ensemble also achieves a high validation accuracy.
 
