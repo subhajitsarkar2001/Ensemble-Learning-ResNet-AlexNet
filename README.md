@@ -328,7 +328,6 @@ Large datasets and model files may be kept outside the repository when repositor
 ## **Final Note**
 
 This repository represents the ensemble-learning phase of the rice leaf disease detection project. It focuses on combining 
-
 predictions from two different CNN architectures and evaluating the resulting classifier through accuracy, class-wise metrics, confusion matrix analysis and multiclass ROC analysis.
   
 
