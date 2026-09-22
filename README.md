@@ -301,9 +301,8 @@ For GPU execution, install a compatible CUDA-enabled environment for the respect
 
   The experiment shows that probability-level fusion can combine predictions from different architectures into a single
 
-  classification system. In this particular experiment, ResNet-18 achieved a higher standalone validation accuracy than the final
-
-  weighted ensemble.
+  classification system. In this particular experiment, ResNet-18 achieved a higher standalone validation accuracy than the 
+  final weighted ensemble.
 
 ## **Project Structure**
 
