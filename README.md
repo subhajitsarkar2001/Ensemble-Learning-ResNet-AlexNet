@@ -161,7 +161,7 @@ The ensemble pipeline performs the following operations:
 
 12)Evaluate the final ensemble using multiple classification metrics.
 
-**Model Accuracy Comparison**
+##**Model Accuracy Comparison**
 
 The validation results obtained from the three prediction approaches are:
 
